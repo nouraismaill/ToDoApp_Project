@@ -217,7 +217,7 @@ class _ToDoListState extends State<ToDoList> {
                       controller: descriptionController,
                       decoration: InputDecoration(labelText: 'Description'),
                     ),
-                    SizedBox(height: 8.0),
+                    SizedBox(height: 18.0),
                     Row(
                       children: [
                         Text('Due Time:'),
@@ -232,7 +232,7 @@ class _ToDoListState extends State<ToDoList> {
                         SizedBox(width: 8.0),
                         ElevatedButton(
                           onPressed: _selectDueTime,
-                          child: Text('Select Time'),
+                          child: Text('Select a Time'),
                         ),
                       ],
                     ),
@@ -250,7 +250,7 @@ class _ToDoListState extends State<ToDoList> {
                       addTask();
                       Navigator.pop(context);
                     },
-                    child: Text('Add'),
+                    child: Text('ADD'),
                   ),
                 ],
               );
